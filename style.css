@@ -3,22 +3,10 @@
     --color-background: #222831;
     --color-secondary-background: #393e46;
     --color-primary-lighter: #32e0c4;
-    --color-primary-light: #916bea;
-    --color-primary: #8257e5;
-    --color-primary-dark: #774dd6;
-    --color-primary-darker: #6842c2;
-    --color-secondary: #04d361;
-    --color-secondary-dark: #04bf58;
     --color-title-in-primary: #ffffff;
-    --color-text-in-primary: #d4c2ff;
-    --color-text-title: #32264d;
-    --color-text-complement: #9c98a6;
-    --color-text-base: #6a6180;
-    --color-line-in-white: #e6e6f0;
-    --color-input-background: #eeeeee;
-    --color-button-text: #ffffff;
-    --color-box-footer: #fafafc;
+    --color-text-base: #ffffff;
     --color-default: #333;
+    --background-cards: #7159c1;
   }
 
   * {
@@ -47,8 +35,80 @@
   header div a {
       color: var(--color-title-in-primary);
       font-size: 18px;
+      line-height: 28px;
+      margin: 0 16px;
   }
 
   header div a:hover {
       color: var(--color-primary-lighter);
+      transition: 0.2s;
+  }
+
+  #wrapper {
+    text-align: center;
+    padding: 32px;
+  }
+
+  #wrapper img {
+    border-radius: 50%;
+    border: 5px solid var(--color-primary-lighter);
+    margin-bottom: 32px;
+    height: 300px;
+  }
+
+  #wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 400;
+  }
+
+  #wrapper h2 {
+    font-size: 21px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+  }
+
+  #wrapper p {
+    max-width: 50%;
+    margin: 32px auto;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  /*--Cards--*/
+  .cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+  }
+
+  .card {
+    background-color: var(--background-cards);
+  }
+
+  .card_image-container img {
+    width: 100%;
+  }
+
+  .card_content,
+  .card_info {
+    padding: 24px;
+  }
+
+  .card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card_price {
+    background-color: var(--background-cards);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
   }
